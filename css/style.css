@@ -1,0 +1,635 @@
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+	margin:0;
+	padding:0;
+	border:0;
+	outline:0;
+	vertical-align:baseline;
+	list-style:none;
+}
+
+
+body {
+	line-height:1.8;
+	text-align:center;
+	color:#555;
+	font-size: 10px;
+	font-family:'Roboto',"Hiragino Kaku Gothic Pro","ヒラギノ角ゴ Pro W3","メイリオ",Meiryo,sans-serif;
+	letter-spacing: 0.15em;
+}
+
+img{
+	vertical-align:bottom;
+}
+
+a {
+	display: inline-block;
+	margin:0;
+	padding:0;
+	vertical-align:baseline;
+	background:transparent;
+	text-decoration: none;
+	color:#f46ba0;
+	-webkit-transition-duration: 0.2s;
+	transition-duration: 0.2s;
+	-webkit-transition-property: transform;
+	transition-property: transform;
+	-webkit-transform: translateZ(0);
+	transform: translateZ(0);
+}
+
+a:hover{
+	-webkit-transform: translateY(3px);
+	transform: translateY(3px);
+}
+
+hr {
+	display:block;
+	height:1px;
+	border:0;
+	margin:1em 0;
+	padding:0;
+}
+
+input, select {
+	vertical-align:middle;
+}
+
+/* clear
+----------------------------------------------------*/
+.clear:after{
+	content: ".";
+	display: block;
+	clear: both;
+	height: 0;
+	visibility: hidden;
+}
+.clear{ display: inline-block; }
+/* exlude MacIE5 \*/
+* html .clear{ height: 1% }
+.clear{display:block;}
+/* end MacIE5 */
+
+/*
+----------------------------------------------------*/
+.wrap{
+	position: relative;
+	min-width: 1200px;
+}
+
+.header{
+	width: 100%;
+	padding:30px 0 50px 0;
+	background:url(../img/border.png) repeat-x top #63bde6;
+}
+
+.main{
+	width: 1200px;
+	margin: 0 auto;
+}
+
+.information{
+	float: left;
+	width: 400px;
+	margin-left: 30px;
+	padding-top: 40px;
+	color: #fff;
+}
+
+.information p{
+	line-height: 1.4;
+}
+
+.information p i{
+	color:#0178b0;
+	font-size: 22px;
+	margin-right: 10px;
+}
+
+.information .date{
+	font-size: 2.1em;
+	font-weight: bold;
+}
+
+.information .comment{
+	font-size: 1.3em;
+	margin-bottom: 10px;
+}
+
+.information .place{
+	font-size: 1.9em;
+	font-weight: bold;
+}
+
+h1{
+	position: relative;
+	line-height: 1;
+	padding-bottom: 40px;
+	margin-bottom: 35px;
+}
+
+h1.sp-logo{
+	display: none;
+}
+
+h1::after{
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	margin-left: -50px;
+	content: '';
+	width: 100px;
+	height: 5px;
+	background: #078ecd;
+}
+
+.entry{
+	display: block;
+	font-size: 1.9em;
+	letter-spacing: 0.18em;
+}
+
+.sp-entry{
+	display: none;
+	font-size: 1.6em;
+	letter-spacing: 0.2em;
+}
+
+.mainimg{
+	position: relative;
+	float: left;
+	width: 770px;
+}
+
+.mainimg .countdown{
+	position: absolute;
+	bottom: 10px;
+	right: 5px;
+	box-sizing: border-box;
+	background: url(../img/bg_countdown.png);
+	-webkit-background-size: 130px;
+	background-size: 130px;
+	width: 130px;
+	height: 130px;
+	padding: 43px 0 0 0;
+	line-height: 1.2;
+	font-weight: bold;
+	font-size: 3.6em;
+	color: #555555;
+}
+
+
+.fixed {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 2;
+}
+
+.glnav{
+	width: 100%;
+	background: #fff;
+	border-bottom: 4px solid #7c85b7;
+}
+
+.glnav li{
+	display: inline-block;
+	font-size: 1.4em;
+	margin: 0 15px;
+}
+
+.glnav a{
+	font-weight: bold;
+	color: #555;
+	padding: 15px 0;
+}
+
+.glnav-entry a{
+	color:#f46ba0;
+}
+
+.section{
+	padding: 80px 0;
+	font-size: 1.4em;
+	color: #444;
+}
+
+.meaning{
+	background:url(../img/bg_meaning.png) no-repeat right bottom #7c85b7;
+	-webkit-background-size: 390px 345px;
+	background-size: 390px 345px;
+	color:#fff;
+}
+
+.news{
+	background: url(../img/bg_news.png) repeat;
+	-webkit-background-size: 24px;
+	background-size: 24px;
+}
+
+.summary{
+	background: #f3f3f1;
+}
+
+.speaker {
+	border-bottom: 2px dotted #e9e8e3;
+}
+
+.inner{
+	width: 800px;
+	margin: 0 auto;
+}
+
+h2{
+	margin-bottom: 30px;
+	font-size: 1.8em;
+	line-height: 1.2;
+	position: relative;
+	padding-bottom: 18px;
+}
+
+h2::after{
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	margin-left: -55px;
+	content: '';
+	width: 110px;
+	height: 4px;
+	background: #4e5a95;
+}
+
+.newslist{
+	background: #fff;
+	text-align: left;
+	padding:20px 30px;
+	border: 2px solid #e9e8e3;
+}
+
+.newslist li{
+	padding: 10px 0;
+	border-top: 2px dotted #f5f5f5;
+}
+
+.newslist li:first-child{
+	border-top: none;
+}
+
+.newslist .newslist-date{
+	float: left;
+	width: 120px;
+}
+
+.newslist .newslist-title{
+	float: left;
+	width: 700px;
+}
+
+.newslist a{
+	color: #4e5a95;
+}
+
+dl{
+	background: #e9e8e3;
+}
+
+dt{
+	box-sizing: border-box;
+	float: left;
+	clear: both;
+	width: 150px;
+	padding: 15px;
+	border-top: 2px solid #f3f3f1;
+	font-weight: bold;
+}
+
+dd{
+	box-sizing: border-box;
+	float: left;
+	width: 650px;
+	padding: 15px;
+	text-align: left;
+	background: #fff;
+	border-top: 2px solid #f3f3f1;
+	font-weight: normal;
+}
+
+.share-list{
+	margin-bottom: 20px;
+}
+
+.share-list li{
+	display: inline-block;
+	margin-left: 15px;
+	width: 200px;
+
+}
+
+.share-list li:first-child{
+	margin-left: 0;
+}
+
+.share-list li i{
+	margin-right: 10px;
+}
+
+.share-list li a{
+	display: block;
+	color: #fff;
+	padding: 10px 0;
+	border-radius: 3px;
+}
+
+.tw a{
+	background: #55acee;
+	border-bottom: 2px solid #3e79a5;
+}
+
+.fb a{
+	background: #3B5999;
+	border-bottom: 2px solid #2a3f69;
+}
+
+.btn{
+	width: 400px;
+	margin: 30px auto 0 auto;
+}
+
+.btn a{
+	display: block;
+	background: #4e5a95;
+	border-radius: 3px;
+	border-bottom: 2px solid #3e487b;
+	padding:15px 20px;
+	color: #fff;
+	font-weight: bold;
+}
+
+.fa-chevron-right{
+	padding-left: 10px;
+}
+
+footer{
+	padding: 40px 0;
+	font-size: 1.4em;
+	background: #444;
+	color: #fff;
+}
+
+.pagetop{
+	position: fixed;
+	right: 0;
+	bottom:100px;
+}
+
+.pagetop a{
+	color: #fff;
+	font-size: 1.7em;
+	padding: 10px 10px 10px 12px;
+	background: #4e5a95;
+	line-height: 1;
+	border-radius: 2px 0 0 2px;
+}
+
+strong{
+	font-weight: bold;
+	color: #4e5a95;
+}
+
+.sp-block{
+	display: none;
+}
+
+@media screen and (max-width: 768px) {
+	.wrap{
+		min-width: 100%;
+	}
+
+	body{
+		letter-spacing: 0.1em;
+	}
+
+	.header{
+		width: auto;
+		padding: 20px;
+	}
+
+	h1{
+		display: none;
+	}
+
+	h1.sp-logo{
+		display: block;
+		margin-bottom: 20px;
+		padding: 0 20px 25px 20px;
+	}
+
+	.information{
+		float: none;
+		width: auto;
+		margin-left: 0;
+		margin-bottom: 20px;
+		padding-top: 20px;
+	}
+
+	.entry{
+		display: none;
+	}
+
+	.sp-entry{
+		display: block;
+		width: auto;
+	}
+
+	.main{
+		width: auto;
+	}
+
+	.mainimg{
+		float: none;
+		width: auto;
+	}
+
+	h1 img,.mainimg img{
+		width: 100%;
+	}
+
+	.countdown{
+		display: none;
+	}
+
+	.section{
+		padding: 30px 0;
+	}
+
+	.inner{
+		width: auto;
+		margin: 0 20px;
+	}
+
+	.box{
+		padding: 0;
+	}
+
+	.newslist .newslist-date{
+		float: none;
+		width: 100%;
+	}
+
+	.newslist .newslist-title{
+		float: none;
+		width: 100%;
+	}
+
+	dl{
+		background: none;
+	}
+
+	dt{
+		margin-bottom: 0;
+		background: #e9e8e3;
+		border-top: 0;
+	}
+
+	dd{
+		margin-bottom: 20px;
+		border-top: 0;
+	}
+
+	dt,dd{
+		width: 100%;
+		float: none;
+	}
+
+	.pagetop{
+		display: none!important;
+	}
+
+	.footer{
+		padding: 20px;
+	}
+
+}
+
+@media screen and (max-width: 479px) {
+
+	.header{
+		padding: 20px 10px 30px 10px;
+	}
+
+	.information .date{
+		letter-spacing: 0;
+	}
+
+	.information .comment{
+		font-weight: bold;
+	}
+
+	.glnav{
+		display: none;
+	}
+
+	.glnav{
+		position: fixed;
+		top: 70px;
+		z-index: 1;
+		font-weight: bold;
+		background: none;
+		border-bottom: none;
+	}
+
+	.glnav ul{
+		margin: 0 20px;
+		padding: 10px 0;
+		border-radius: 2px;
+		background:rgba(50,50,50,0.9);
+	}
+
+	.glnav li{
+		display: block;
+		text-align: left;
+		margin: 0;
+	}
+
+	.glnav li.top{
+		display: block;
+	}
+
+	.glnav li a{
+		color: #fff;
+		display: block;
+		padding:10px 20px;
+	}
+
+	.glnav li a:hover, .glnav li a:focus, .sp-glnav li a:active {
+		-webkit-transform: translateX(5px);
+		transform: translateX(5px);
+	}
+
+	h1.sp-logo{
+
+		padding: 0 10px 25px 10px;
+	}
+
+	.menu-btn{
+		display: none;
+		position: fixed;
+		top:20px;
+		right: 20px;
+		display: inline-block;
+		z-index: 1;
+		font-size: 1.5em;
+		padding: 8px 10px;
+		border-radius: 2px;
+		color: #4e5a95;
+		line-height: 1;
+		background: #fff;
+	}
+
+	.sp-entry.btn{
+		margin:20px 10px 0 10px;
+	}
+
+	.share-list li{
+		display:block;
+		margin-left: 0;
+		width: 100%;
+	}
+
+	.share-list li:first-child{
+		margin-bottom: 10px;
+	}
+
+	.share-list a{
+		width: 100%;
+	}
+
+	.btn{
+		margin: 30px 0 0 0;
+		padding: 0;
+		width: auto;
+	}
+
+	.btn a{
+		display: block;
+		margin: 0;
+	}
+
+	.pc-block{
+		display: none;
+	}
+
+	.sp-block{
+		display: block;
+	}
+}
