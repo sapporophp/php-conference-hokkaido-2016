@@ -241,7 +241,7 @@ h1::after{
 	background: #f3f3f1;
 }
 
-.speaker {
+.speaker, .sponsor{
 	border-bottom: 2px dotted #e9e8e3;
 }
 
