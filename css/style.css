@@ -224,6 +224,10 @@ h1::after{
 	color: #444;
 }
 
+.sponsor{
+	background: #d7dae9;
+}
+
 .meaning{
 	background:url(../img/bg_meaning.png) no-repeat right bottom #7c85b7;
 	-webkit-background-size: 390px 345px;
@@ -241,9 +245,11 @@ h1::after{
 	background: #f3f3f1;
 }
 
+/*
 .speaker, .sponsor{
 	border-bottom: 2px dotted #e9e8e3;
 }
+*/
 
 .inner{
 	width: 800px;
@@ -267,6 +273,55 @@ h2::after{
 	width: 110px;
 	height: 4px;
 	background: #4e5a95;
+}
+
+h3{
+	margin-bottom: 20px;
+}
+
+.sponsorlist.gold{
+	margin-bottom: 20px;
+}
+
+ul.sponsorlist {
+    display:-webkit-box;
+    display:-moz-box;
+    display:-ms-box;
+    display:-webkit-flexbox;
+    display:-moz-flexbox;
+    display:-ms-flexbox;
+    display:-webkit-flex;
+    display:-moz-flex;
+    display:-ms-flex;
+    display:flex;
+    -webkit-box-lines:multiple;
+    -moz-box-lines:multiple;
+    -webkit-flex-wrap:wrap;
+    -moz-flex-wrap:wrap;
+    -ms-flex-wrap:wrap;
+    flex-wrap:wrap;
+}
+ 
+.sponsorlist li {
+    margin:0 20px 20px 0;
+    background: #fff;
+    width:253px;
+	text-align: center;
+}
+
+.sponsorlist li:nth-child(3n){
+	margin-right: 0;
+}
+
+.sponsorlist li a{
+	box-sizing: border-box;
+	width: 253px;
+	padding: 10px;
+}
+
+.sponsorlist li img{
+	width: 100%;
+	height: auto;
 }
 
 .newslist{
@@ -480,6 +535,28 @@ strong{
 	.box{
 		padding: 0;
 	}
+
+	.sponsorlist li {
+    margin:0 2% 2% 0;
+    background: #fff;
+    width:49%;
+	text-align: center;
+	}
+
+	.sponsorlist li:nth-child(3n){
+		margin-right: auto;
+	}
+
+	.sponsorlist li:nth-child(2n){
+		margin-right: 0;
+	}
+
+	.sponsorlist li a{
+		box-sizing: border-box;
+		width: 100%;
+		padding: 10px;
+	}
+
 
 	.newslist .newslist-date{
 		float: none;
