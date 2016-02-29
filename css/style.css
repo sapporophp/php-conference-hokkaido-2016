@@ -245,6 +245,14 @@ h1::after{
 	background: #f3f3f1;
 }
 
+.program{
+	background: #7c85b7;
+}
+
+.program h2{
+	color: #fff;
+}
+
 /*
 .speaker, .sponsor{
 	border-bottom: 2px dotted #e9e8e3;
@@ -252,7 +260,7 @@ h1::after{
 */
 
 .inner{
-	width: 800px;
+	width: 900px;
 	margin: 0 auto;
 }
 
@@ -305,7 +313,7 @@ ul.sponsorlist {
 .sponsorlist li {
     margin:0 20px 20px 0;
     background: #fff;
-    width:253px;
+    width:286px;
 	text-align: center;
 }
 
@@ -315,7 +323,7 @@ ul.sponsorlist {
 
 .sponsorlist li a{
 	box-sizing: border-box;
-	width: 253px;
+	width: 286px;
 	padding: 10px;
 }
 
@@ -371,12 +379,81 @@ dt{
 dd{
 	box-sizing: border-box;
 	float: left;
-	width: 650px;
+	width: 750px;
 	padding: 15px;
 	text-align: left;
 	background: #fff;
 	border-top: 2px solid #f3f3f1;
 	font-weight: normal;
+}
+
+
+.program-list{
+	margin-bottom: 30px;
+}
+
+.program-list li{
+	display: table;
+	width: 100%;
+	margin-bottom: 2px;
+}
+
+.program-time{
+	display: table-cell;
+	box-sizing: border-box;
+	padding: 20px;
+	vertical-align: middle;
+	width: 100px;
+	font-weight: bold;
+	background: #d7dae9;
+}
+.program-time br{
+	display: block;
+}
+
+.program-icon{
+	display: table-cell;
+	box-sizing: border-box;
+	padding: 20px;
+	padding-right: 0;
+	vertical-align: middle;
+	width: 130px;
+	font-weight: bold;
+	background: #f7f7f7;
+}
+
+.program-name{
+	display: table-cell;
+	box-sizing: border-box;
+	padding: 20px 10px;
+	vertical-align: middle;
+	width: 170px;
+	text-align: center;
+	background: #f7f7f7;
+}
+
+.program-summary{
+	display: table-cell;
+	box-sizing: border-box;
+	padding: 20px;
+	vertical-align: middle;
+	width: 500px;
+	text-align: left;
+	background: #fff;
+}
+
+.program-summary h3{
+}
+
+.program-summary.wide{
+	width: 800px;
+}
+
+.program-icon img{
+	width: 96px;
+	height: 96px;
+	border: 2px solid #fff;
+	border-radius: 50px;
 }
 
 .share-list{
@@ -586,6 +663,40 @@ strong{
 	dt,dd{
 		width: 100%;
 		float: none;
+	}
+
+	.program-list li{
+		display: block;
+		width: 100%;
+		margin-bottom: 20px;
+	}
+	.program-time{
+		display: block;
+		width: 100%;
+	}
+	.program-time br{
+		display: none;
+	}
+	.program-icon{
+		display: block;
+		width: 100%;
+		padding-bottom: 0;
+		padding-right: 0;
+		padding-left: 0;
+	}
+	.program-name{
+		display: block;
+		width: 100%;
+	}
+	.program-summary{
+		display: block;
+		width: 100%;
+	}
+	.program-summary h3{
+	}
+	.program-summary.wide{
+		display: block;
+		width: 100%;
 	}
 
 	.pagetop{
