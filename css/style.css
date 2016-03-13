@@ -260,7 +260,7 @@ h1::after{
 */
 
 .inner{
-	width: 900px;
+	width: 1000px;
 	margin: 0 auto;
 }
 
@@ -310,20 +310,37 @@ ul.sponsorlist {
     flex-wrap:wrap;
 }
  
-.sponsorlist li {
+.sponsorlist.gold li {
     margin:0 20px 20px 0;
     background: #fff;
-    width:286px;
+    width:320px;
 	text-align: center;
 }
 
-.sponsorlist li:nth-child(3n){
+.sponsorlist.silver li {
+    margin:0 20px 20px 0;
+    background: #fff;
+    width:235px;
+	text-align: center;
+}
+
+.sponsorlist.gold li:nth-child(3n){
 	margin-right: 0;
 }
 
-.sponsorlist li a{
+.sponsorlist.silver li:nth-child(4n){
+	margin-right: 0;
+}
+
+.sponsorlist.gold li a{
 	box-sizing: border-box;
-	width: 286px;
+	width: 320px;
+	padding: 10px;
+}
+
+.sponsorlist.silver li a{
+	box-sizing: border-box;
+	width: 235px;
 	padding: 10px;
 }
 
@@ -355,7 +372,7 @@ ul.sponsorlist {
 
 .newslist .newslist-title{
 	float: left;
-	width: 700px;
+	width: 820px;
 }
 
 .newslist a{
@@ -370,7 +387,7 @@ dt{
 	box-sizing: border-box;
 	float: left;
 	clear: both;
-	width: 150px;
+	width: 200px;
 	padding: 15px;
 	border-top: 2px solid #f3f3f1;
 	font-weight: bold;
@@ -379,7 +396,7 @@ dt{
 dd{
 	box-sizing: border-box;
 	float: left;
-	width: 750px;
+	width: 800px;
 	padding: 15px;
 	text-align: left;
 	background: #fff;
@@ -437,7 +454,7 @@ dd{
 	box-sizing: border-box;
 	padding: 20px;
 	vertical-align: middle;
-	width: 500px;
+	width: 600px;
 	text-align: left;
 	background: #fff;
 }
@@ -446,7 +463,7 @@ dd{
 }
 
 .program-summary.wide{
-	width: 800px;
+	width:900px;
 }
 
 .program-icon img{
@@ -613,22 +630,27 @@ strong{
 		padding: 0;
 	}
 
-	.sponsorlist li {
-    margin:0 2% 2% 0;
+	.sponsorlist.gold li:nth-child(3n),
+	.sponsorlist.silver li:nth-child(4n){
+		margin-right: auto ;
+	}
+
+
+	.sponsorlist.gold li,
+	.sponsorlist.silver li {
+    margin:0 2% 2% 0!important;
     background: #fff;
     width:49%;
 	text-align: center;
 	}
 
-	.sponsorlist li:nth-child(3n){
-		margin-right: auto;
+	.sponsorlist.gold li:nth-child(2n),
+	.sponsorlist.silver li:nth-child(2n){
+		margin-right: 0!important;
 	}
 
-	.sponsorlist li:nth-child(2n){
-		margin-right: 0;
-	}
-
-	.sponsorlist li a{
+	.sponsorlist.gold li a,
+	.sponsorlist.silver li a{
 		box-sizing: border-box;
 		width: 100%;
 		padding: 10px;
