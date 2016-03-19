@@ -88,3 +88,23 @@ function countDown() {
 	$('.timeleft').text(remainingDays);
 	setTimeout('countDown()', 1000);
 }
+
+
+//
+$(function() {
+	var btn = $('.read-more');
+	var more = $('.more');
+
+	btn.each(function() {
+		$(this).on('click', function() {
+			$(this).prev(more).slideToggle(function() {
+				if ($(this).is(':visible')) {
+					$(this).next().text('閉じる');
+				} else {
+					$(this).next().text('続きを見る');
+				}
+			});
+		});		
+	});
+
+});
