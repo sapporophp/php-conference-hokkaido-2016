@@ -287,8 +287,14 @@ h3{
 	margin-bottom: 20px;
 }
 
-.sponsorlist.gold{
+.sponsorlist.gold,
+.sponsorlist.silver{
 	margin-bottom: 20px;
+}
+
+.sponsorlist.other{
+	width:235px;
+	margin: 0 auto;
 }
 
 ul.sponsorlist {
@@ -317,8 +323,14 @@ ul.sponsorlist {
 	text-align: center;
 }
 
-.sponsorlist.silver li {
+.sponsorlist.silver li{
     margin:0 20px 20px 0;
+    background: #fff;
+    width:235px;
+	text-align: center;
+}
+
+.sponsorlist.other li {
     background: #fff;
     width:235px;
 	text-align: center;
@@ -328,7 +340,8 @@ ul.sponsorlist {
 	margin-right: 0;
 }
 
-.sponsorlist.silver li:nth-child(4n){
+.sponsorlist.silver li:nth-child(4n),
+.sponsorlist.other li:nth-child(4n){
 	margin-right: 0;
 }
 
@@ -338,7 +351,8 @@ ul.sponsorlist {
 	padding: 10px;
 }
 
-.sponsorlist.silver li a{
+.sponsorlist.silver li a,
+.sponsorlist.other li a{
 	box-sizing: border-box;
 	width: 235px;
 	padding: 10px;
@@ -646,27 +660,36 @@ strong{
 		padding: 0;
 	}
 
+	.sponsorlist.other{
+		width: 100%;
+	}
+
 	.sponsorlist.gold li:nth-child(3n),
-	.sponsorlist.silver li:nth-child(4n){
+	.sponsorlist.silver li:nth-child(4n),
+	.sponsorlist.other li:nth-child(4n){
 		margin-right: auto ;
 	}
 
-
 	.sponsorlist.gold li,
-	.sponsorlist.silver li {
+	.sponsorlist.silver li,
+	.sponsorlist.other li {
     margin:0 2% 2% 0!important;
     background: #fff;
     width:49%;
 	text-align: center;
 	}
 
+
+
 	.sponsorlist.gold li:nth-child(2n),
-	.sponsorlist.silver li:nth-child(2n){
+	.sponsorlist.silver li:nth-child(2n),
+	.sponsorlist.other li:nth-child(2n){
 		margin-right: 0!important;
 	}
 
 	.sponsorlist.gold li a,
-	.sponsorlist.silver li a{
+	.sponsorlist.silver li a,
+	.sponsorlist.other li a{
 		box-sizing: border-box;
 		width: 100%;
 		padding: 10px;
